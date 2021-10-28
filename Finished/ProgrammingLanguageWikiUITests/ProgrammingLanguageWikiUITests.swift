@@ -20,10 +20,10 @@ class ProgrammingLanguageWikiUITests: XCTestCase {
     }
 
     func test_PHP검색후_즐겨찾기추가했을때_즐겨찾기항목에추가되는지() {
-        // when
+        // given
         let phpCell = app.cells["PHP 언어 보기"]
         
-        // given
+        // when
         let mainviewcontrollerSearchbarSearchField = app.searchFields["MainViewController.searchBar"]
         mainviewcontrollerSearchbarSearchField.tap()
         app.keys["P"].tap()
